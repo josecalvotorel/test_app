@@ -1,0 +1,11 @@
+{
+    "COMMON": {
+        "ACCESS": "Acceder",
+        "REMEMBER": "Recordar",
+        "EMAIL": "Email",
+        "PASSWORD": "Contraseña"
+    },
+    "LOGIN": {
+        "TITLE": "Prueba técnica"
+    }
+}
