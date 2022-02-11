@@ -1,0 +1,11 @@
+{
+    "COMMON": {
+        "ACCESS": "Acces",
+        "REMEMBER": "Remember",
+        "EMAIL": "Email",
+        "PASSWORD": "Password"
+    },
+    "LOGIN": {
+        "TITLE": "Technical test"
+    }
+}
