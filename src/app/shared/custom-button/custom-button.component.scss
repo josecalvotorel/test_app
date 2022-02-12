@@ -1,0 +1,19 @@
+.custom-button {
+    width: 100%;
+    text-transform: none;
+    --box-shadow: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-weight: 600;
+  }
+
+@media only screen and (min-width: 960px) {
+    .custom-button {
+        width: auto;
+        background-color: white !important;
+        --ion-color-primary: rgba(255, 255, 255, 0) !important;
+        --ion-color-primary-contrast: black !important;
+        border: 1px solid blue;
+        border-radius: 30px;
+      }
+}
