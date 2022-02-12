@@ -1,0 +1,7 @@
+<ion-button id="button"
+  [type]="btnType ? btnType : 'button'"
+  [class]="'custom-button ' + btnClass"
+  [disabled]="btnDisabled"
+>
+  {{ btnText | translate }}
+</ion-button>

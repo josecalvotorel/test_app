@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {TranslateService} from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -18,10 +18,10 @@ export class AppComponent {
   translate.setDefaultLang('es');
 
   // Lang based on browser
-  const browsweLang = translate.getBrowserLang();
+  const browserLang = translate.getBrowserLang();
   translate.use(
-    translate.langs.includes(browsweLang)
-      ? browsweLang
+    translate.langs.includes(browserLang)
+      ? browserLang
       : translate.defaultLang
   );
   }
