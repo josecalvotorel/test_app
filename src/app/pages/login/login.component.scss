@@ -1,18 +1,18 @@
 :host {
-    .background-image {
-      --background: url('../../../assets/imgs/background.jpg') no-repeat fixed center;
+    .login-container {
+      --background: url('../../../assets/imgs/background.jpg') no-repeat 0% / cover fixed;
     }
-
     .login-card {
-        // align-items: center;
-        width: 37%;
+        width: 25%;
         height: auto;
         margin-left: auto;
         margin-right: auto;
         margin-top: 8%;
         border-radius: 0px;
     }
-
+    .login-icon {
+        font-size: 18px;
+    }
     .login-logo {
         background: url('../../../assets/imgs/logo.jpg');
         background-repeat: no-repeat;
@@ -23,23 +23,90 @@
         margin-left: auto;
         margin-right: auto;
     }
-
+    .login-logo.responsive-display {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
     .login-item {
         margin: 0px 0px 0px 0px;
+    }
+
+    .title-container{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .title-text {
+        text-align: center;
+        width: 100%;
+        font-weight: 600;
+        color: black;
+        font-size: 17px;
+        margin-top: 1.5rem;
+        display: block;
+    }
+
+    ion-icon.login-icon.md.hydrated {
+        margin-right: 1rem;
+        margin-left: -1rem;
+    }
+
+    .desktop-display {
+        display: block;
+    }
+    .responsive-display {
+        display: none;
     }
 
     .error-msg {
         color: red;
     }
-
     .remember-row {
         align-items: center;
         margin-top: 0.1rem;
+    }
+    .toggle-container {
+        text-align: right;
+        ion-toggle {
+            padding-right: 0rem;
+        }
+    }
+    .remember-container {
+        padding-left: 0rem;
+        font-weight: 500;
+        color: black;
+    }
+    .submit-button-container {
+        text-align: center;
     }
 
     ion-icon {
         color: rgb(187, 185, 185) !important;
         background-color: transparent;
+    }
+    ion-input {
+        font-size: 12px;
+    }
+
+      @media only screen and (max-width: 960px) {
+        .login-card {
+            width: 86%;
+            height: auto;
+            margin-left: 7%;
+            margin-right: 7%;
+            border-radius: 0px;
+        }
+        .desktop-display {
+            display: none;
+        }
+        .responsive-display {
+            display: block;
+        }
+        .submit-button-container {
+            margin-bottom: -2rem;
+            margin-left: -2rem;
+            margin-right: -2rem;
+        }
+
       }
     
   }

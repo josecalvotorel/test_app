@@ -3,10 +3,12 @@
         "ACCESS": "Acceder",
         "REMEMBER": "Recordar",
         "EMAIL": "Email",
-        "PASSWORD": "Contraseña"
+        "PASSWORD": "Contraseña",
+        "OK": "Ok"
     },
     "LOGIN": {
-        "TITLE": "Prueba técnica"
+        "TITLE": "Prueba técnica",
+        "SUBMITED_FIELDS": "Valores enviados:"
     },
     "ERROR": {
         "EMAIL_REQUIRED": "Email requerido",
