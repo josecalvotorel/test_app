@@ -3,9 +3,17 @@
         "ACCESS": "Acces",
         "REMEMBER": "Remember",
         "EMAIL": "Email",
-        "PASSWORD": "Password"
+        "PASSWORD": "Password",
+        "OK": "Ok"
     },
     "LOGIN": {
-        "TITLE": "Technical test"
+        "TITLE": "Technical test",
+        "SUBMITED_FIELDS": "Values submited:"
+    },
+    "ERROR": {
+        "EMAIL_REQUIRED": "Email required",
+        "EMAIL_NO_VALID": "Email format is not valid",
+        "PASSWORD_REQUIRED": "Password required",
+        "PASSWORD_MIN_LENGTH": "Password must have at least 5 characters"
     }
 }

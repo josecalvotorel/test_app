@@ -1,9 +1,76 @@
-<p>
-  {{ 'LOGIN.TITLE' | translate }}
-</p>
-<app-custom-button 
-  [btnText]="'COMMON.ACCESS'"
-  [btnType]="'submit'"
-  [btnDisabled]="false"
-  >
-</app-custom-button>
+<ion-content class="login-container">
+
+  <div class="login-logo responsive-display"></div>
+
+  <ion-card class="login-card">
+    <ion-card-header class="title-container desktop-display">
+      <div class="login-logo"></div>
+      <span class="title-text">{{ "LOGIN.TITLE" | translate }}</span>
+    </ion-card-header>
+    <ion-card-content>
+
+      <form [formGroup]="loginForm" (ngSubmit)="submitForm()" novalidate>
+
+        <ion-item lines="full">
+          <ion-icon class="login-icon" slot="start" name="person-outline"></ion-icon>
+          <ion-input
+            formControlName="email"
+            type="text"
+            placeholder="{{ 'COMMON.EMAIL' | translate }}"></ion-input>
+        </ion-item>
+
+        <span
+          class="error-msg ion-padding"
+          *ngIf="isSubmitted && errorControl.email.errors?.required">
+          {{ "ERROR.EMAIL_REQUIRED" | translate }}
+        </span>
+        <span
+          class="error-msg ion-padding"
+          *ngIf="isSubmitted && errorControl.email.errors?.pattern">
+          {{ "ERROR.EMAIL_NO_VALID" | translate }}
+        </span>
+
+        <ion-item lines="full">
+          <ion-icon class="login-icon" slot="start" name="lock-closed-outline"></ion-icon>
+          <ion-input
+            formControlName="password"
+            type="password"
+            placeholder="{{ 'COMMON.PASSWORD' | translate }}"
+            required></ion-input>
+        </ion-item>
+
+        <span
+          class="error-msg ion-padding"
+          *ngIf="isSubmitted && errorControl.password.errors?.required">
+          {{ "ERROR.PASSWORD_REQUIRED" | translate }}
+        </span>
+        <span
+          class="error-msg ion-padding"
+          *ngIf="isSubmitted && errorControl.password.errors?.minlength">
+          {{ "ERROR.PASSWORD_MIN_LENGTH" | translate }}
+        </span>
+
+        <ion-row class="remember-row">
+          <ion-col class="remember-container">
+            {{ "COMMON.REMEMBER" | translate }}
+          </ion-col>
+          <ion-col class="toggle-container">
+            <ion-toggle formControlName="reminder"> </ion-toggle>
+          </ion-col>
+        </ion-row>
+        <ion-row class="submit-button-container">
+          <ion-col>
+            <app-custom-button
+              [btnText]="'COMMON.ACCESS'"
+              [btnType]="'submit'"
+              [btnDisabled]="false">
+            </app-custom-button>
+          </ion-col>
+        </ion-row>
+
+      </form>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
