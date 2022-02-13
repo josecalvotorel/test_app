@@ -1,0 +1,19 @@
+{
+    "COMMON": {
+        "ACCESS": "Acceder",
+        "REMEMBER": "Recordar",
+        "EMAIL": "Email",
+        "PASSWORD": "Contraseña",
+        "OK": "Ok"
+    },
+    "LOGIN": {
+        "TITLE": "Prueba técnica",
+        "SUBMITED_FIELDS": "Valores enviados:"
+    },
+    "ERROR": {
+        "EMAIL_REQUIRED": "Email requerido",
+        "EMAIL_NO_VALID": "Formato de email no válido",
+        "PASSWORD_REQUIRED": "Contraseña requerida",
+        "PASSWORD_MIN_LENGTH": "Mínimo 5 caracteres para la contraseña"
+    }
+}

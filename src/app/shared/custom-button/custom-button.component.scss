@@ -1,0 +1,23 @@
+.custom-button {
+  width: 100%;
+  text-transform: none;
+  --box-shadow: none;
+  font-weight: 600;
+  --border-radius: 0px;
+}
+
+@media only screen and (min-width: 961px) {
+  .custom-button {
+    background-color: white;
+    width: auto;
+    --ion-color-primary: rgba(255, 255, 255, 0);
+    --ion-color-primary-contrast: black;
+    --border-radius: 30px;
+    --border-width: 2px;
+    --border-style: solid;
+    --border-color: rgb(77, 77, 202);
+    --padding-start: 2rem;
+    --padding-end: 2rem;
+  }
+  
+}
