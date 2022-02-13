@@ -7,5 +7,11 @@
     },
     "LOGIN": {
         "TITLE": "Prueba técnica"
+    },
+    "ERROR": {
+        "EMAIL_REQUIRED": "Email requerido",
+        "EMAIL_NO_VALID": "Formato de email no válido",
+        "PASSWORD_REQUIRED": "Contraseña requerida",
+        "PASSWORD_MIN_LENGTH": "Mínimo 5 caracteres para la contraseña"
     }
 }
